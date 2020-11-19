@@ -6,9 +6,13 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+In this project, the UCI Bank Marketing dataset was used to predict if a client is likely to subscribe to a term deposit with the bank.
 
-**In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+To that end, the parameters of a Scikit-learn logistic regression model were automatically optimized using the HyperDrive package from the Azure Machine Learning studio with the Python SDK.
+
+Additionally, an AutoML pipeline was used to train and tune a model on the same dataset to afterwards compare the results from both methods.
+
+In both cases the target metric was the model's "Accuracy".
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
