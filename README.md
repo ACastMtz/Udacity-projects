@@ -17,17 +17,20 @@ In both cases the target metric was the model's "Accuracy".
 The Hyperdrive run yielded an accuracy of 0.9073 for a logistic regression model and from the AutoML run the highest reached accuracy was 0.9178 using a VotingEnsemble method.
 
 ## Scikit-learn Pipeline
-
+\
 CREATE AZURE MACHINE LEARNING COMPUTE CLUSTER:
+
 Create the the compute cluster in which the Hyperdrive run will execute.
 The compute is composed by 4 two-core nodes, which will start by provisioning 1 node and scale up to 4 as required (vm Standard_D2_V2).
 
 DATA PREPARATION, CONFIGURATION AND MODEL TRAINING:
+
 First the data is downloaded as a TabularDataset to begin its preparation. 
 It is then cleaned by transforming cathegorical values into numerical ones via the get_dummies function and applying lambda functions to perform one hot encoding. Afterwards, it is split in training and test datasets. The dataset are then fed into the main function where the logistic regression model is trained, fitted and scored (using as metric the accuracy of the model). The initial hyperparameter values are parsed arguments with default values: inverse of regularization strength "C" = 1.0 and maximum number of iterations "max_iter" = 1000. These three values, C, max_iter and accuracy, are also logged.
 The steps described above are coded in the script "train.py".
 
 HYPERPARAMETER TUNING:
+
 A Hyperdrive run is set up to allow for automatically sweeping and finding the best values for the adjustable parameters of the custom-coded logistic regression model:
 
 1st define parameter search space: continuous for C and discrete for max_iter.
