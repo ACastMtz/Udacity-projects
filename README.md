@@ -1,20 +1,21 @@
 # Optimizing an ML Pipeline in Azure
 
 ## Overview
+\
 This project is part of the Udacity Azure ML Nanodegree.
 In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-
+\
 In this project, the UCI Bank Marketing dataset was used to train a model to predict if a client is likely to subscribe to a term deposit with the bank.
 
-To that end, the parameters of a Scikit-learn logistic regression model were automatically optimized using the HyperDrive package from the Azure Machine Learning studio with the Python SDK.
+To that end, the parameters of a **Scikit-learn logistic regression** model were automatically optimized using the **HyperDrive** package from the Azure Machine Learning studio with the Python SDK.
 
-Additionally, an AutoML pipeline was used to train and tune a model on the same dataset to afterwards compare the results from both methods.
+Additionally, an **AutoML** pipeline was used to train and tune a model on the same dataset to afterwards compare the results from both methods.
 
-In both cases the target metric was the model's "Accuracy". 
-The Hyperdrive run yielded an accuracy of 0.9073 for a logistic regression model and from the AutoML run the highest reached accuracy was 0.9178 using a VotingEnsemble method.
+In both cases the target metric was the model's **Accuracy**. 
+The Hyperdrive run yielded an accuracy of **0.9073 for a logistic regression model** and from the AutoML run the highest reached accuracy was **0.9178 using the VotingEnsemble method**.
 
 ## Scikit-learn Pipeline
 \
@@ -26,30 +27,31 @@ The compute is composed by 4 two-core nodes, which will start by provisioning 1 
 DATA PREPARATION, CONFIGURATION AND MODEL TRAINING:
 
 First the data is downloaded as a TabularDataset to begin its preparation. 
-It is then cleaned by transforming cathegorical values into numerical ones via the get_dummies function and applying lambda functions to perform one hot encoding. Afterwards, it is split in training and test datasets. The datasets are then fed into the main function where the logistic regression model is trained (for classification), fitted and scored (using as metric the accuracy of the model). The initial hyperparameter values are parsed arguments with default values: inverse of regularization strength "C" = 1.0 and maximum number of iterations "max_iter" = 1000. These three values, C, max_iter and accuracy, are also logged.
-The steps described above are coded in the script "train.py".
+It is then cleaned by transforming cathegorical values into numerical ones via the get_dummies function and applying lambda functions to perform one hot encoding. Afterwards, it is split in training and test datasets. The datasets are then fed into the main function where the logistic regression model is trained (for classification), fitted and scored (using as metric the accuracy of the model). The initial hyperparameter values are parsed arguments with default values: **inverse of regularization strength "C" = 1.0** and **maximum number of iterations "max_iter" = 1000**. These three values, C, max_iter and accuracy, are also logged. Other important parameters are: *"penalty"=l2* (default) and *"solver" = lbfgs* (Limited-memory approximation of Broyden-Fletcher-Goldfarb-Shanno algorithm, default) to use in the optimization of the algorithm.
+The steps described above are coded in the script **"train.py"**.
 
 HYPERPARAMETER TUNING AND VALIDATION:
 
 A Hyperdrive run is set up to allow for automatically sweeping and finding the best values for the adjustable parameters of the custom-coded logistic regression model:
 
-1st--> define parameter search space: continuous for C and discrete for max_iter.
+1st--> define *parameter search space*: continuous for C and discrete for max_iter.
 
-2nd--> define sampling method,i.e. how do you want to find the best values over the search space. In this case a random sampling approach was used due to its time efficiency while still yielding good results.
+2nd--> define *sampling method*,i.e. how do you want to find the best values over the search space. In this case a random sampling approach was used due to its time efficiency while still yielding good results.
 
-3rd--> specify an early termination policy to stop the model's tuning after a certain number of failures in order to improve computational efficiency. In this project, a Bandit Policy was used which terminates a specific run if its primary metric is not higher than a reference value called Slack_factor that defines the allowed "slack" of a single run's primary metric compared to the best performing run. The frequency at which the policy is applied is set by the evaluation_interval, if it is 1, the policy will be applied at every interval when metrics are reported. A Bandit Policy provides a better savings scheme (assuming a small enough slack) that may incur from compute resources by aggresively terminating runs.
+3rd--> specify an early *termination policy* to stop the model's tuning after a certain number of failures in order to improve computational efficiency. In this project, a **Bandit Policy** was used which terminates a specific run if its primary metric is not higher than a reference value called **Slack_factor** that defines the allowed "slack" of a single run's primary metric compared to the best performing run. The frequency at which the policy is applied is set by the **evaluation_interval**, if it is 1, the policy will be applied at every interval when metrics are reported. A Bandit Policy provides a better savings scheme (assuming a small enough slack) that may incur from compute resources by aggresively terminating runs.
 
-4th--> create a Sklearn estimator to run the script-based training, which will be executed using the compute configuration that was defined at the beginning of the experiment. An Estimator object is helpful when the Run Configuration is too complex. The constructor takes in values such as the compute resources allocated for experiment execution and the training script. Particularly, the Sklearn estimator includes the framework's (SKLearn) specific dependencies.
+4th--> create a *Sklearn estimator* to run the script-based training, which will be executed using the compute configuration that was defined at the beginning of the experiment. An Estimator object is helpful when the Run Configuration is too complex. The constructor takes in values such as the compute resources allocated for experiment execution and the training script. Particularly, the Sklearn estimator includes the framework's (SKLearn) specific dependencies.
 
-5th--> specify the primary metric to optimize, in our case accuracy.
+5th--> specify the primary metric to optimize, in our case **Accuracy**.
 
-6th--> create a HyperDriveConfig with the estimator, sampling method and termination policy. The primary_metric_goal (maximize the accuracy), max_total_runs and max_concurrent_runs can be defined here.
+6th--> create a *HyperDriveConfig* with the estimator, sampling method and termination policy. The **primary_metric_goal (maximize the accuracy)**, max_total_runs and max_concurrent_runs can be defined here.
 
 Finally, the hyperdrive run is submitted and the model from the best run saved.
 
 
 ## AutoML
-**In 1-2 sentences, describe the model and hyperparameters generated by AutoML.**
+\
+The AutoML classification task was run with similar parameters on the same dataset using **Accuracy** as the primary metric. As already mentioned, the **VotingEnsemble method** yielded the highest accuracy value .
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
