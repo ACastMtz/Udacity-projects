@@ -87,6 +87,6 @@ Trying out multiple algorithms it's almost always a good approach to any machine
 
 **Hyperparameters**
 
-In the Hyperdrive experiment we used a random sampling method to find the "best" hyperparameters for the model. Alternatively, using a more exhaustive approach such as grid sampling could lead to better hyperparameter values, albeit at a slower sweep speed. Another way could be using a Bayesian sampler, which selects values based on prior values that improved the performance. Some of the child runs from the Hyperdrive experiment showed the same accuracy at different parameter values so the whole sampling needn't be carried out completely, the downside is that Bayesian sampling does not support early termination.
+In the Hyperdrive experiment we used a random sampling method to find the "best" hyperparameters for the model. Alternatively, using a more exhaustive approach such as **Grid sampling** could lead to better hyperparameter values, albeit at a slower sweep speed. Another way could be using a **Bayesian sampler**, which selects values based on prior values that improved the performance. Some of the child runs from the Hyperdrive experiment showed the same accuracy at different parameter values so the whole sampling needn't be carried out completely, the downside is that Bayesian sampling does not support early termination.
 Last but not least, a validation set could be added for validation of the hyperparameters instead of using cross validation on the training set.
 
