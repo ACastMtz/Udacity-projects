@@ -90,3 +90,9 @@ Trying out multiple algorithms it's almost always a good approach to any machine
 In the Hyperdrive experiment we used a random sampling method to find the "best" hyperparameters for the model. Alternatively, using a more exhaustive approach such as **Grid sampling** could lead to better hyperparameter values, albeit at a slower sweep speed. Another way could be using a **Bayesian sampler**, which selects values based on prior values that improved the performance. Some of the child runs from the Hyperdrive experiment showed the same accuracy at different parameter values so the whole sampling needn't be carried out completely, the downside is that Bayesian sampling does not support early termination.
 Last but not least, a validation set could be added for validation of the hyperparameters instead of using cross validation on the training set.
 
+## Resources
+https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/classification-bank-marketing-all-features/auto-ml-classification-bank-marketing-all-features.ipynb
+https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier
+https://machinelearningmastery.com/voting-ensembles-with-python/#:~:text=A%20voting%20ensemble%20(or%20a,model%20used%20in%20the%20ensemble.
+https://docs.microsoft.com/en-us/azure/machine-learning/?view=azure-ml-py
+Aurélien Géron, *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*, 2nd Edition, September 2019.
