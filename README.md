@@ -70,19 +70,23 @@ Another difference is the time it took for each run to complete: **Hyperdrive ap
 As with any ML project there is always ample room for improvements. I'll try to divide some of the possible steps to improve future experiments in a (hopefully) comprehensble way.
 
 **Hardware**
-*Disclaimer: It is assumed that large financial resources are available and it would not represent a major issue if costs were to increment.*
-To improve computational efficiency, faster computes could be used instead of the Standard_D2_V2. Compute clusters with more core nodes or even a GPU would boost the model's training speed (higher values in parameters max_cores_per_iteration and max_concurrent_iterations) and even make it feasible to use deep learning methods suchs as a **TensorFlow Estimator** (instead of a Sklearn estimator) or allowing TensorFlow models in the AutoML experiment. An increased efficiency would also be benefitial in cases where the run time is limited (e.g. using a VM from Udacity).
+
+Provided that enough financial resources are available and it would not represent a major issue if costs were to increment, the following hardware upgrades could be considered: To improve computational efficiency, faster computes could be used instead of the Standard_D2_V2. Compute clusters with more core nodes or even a GPU would boost the model's training speed (higher values in parameters max_cores_per_iteration and max_concurrent_iterations) and even make it feasible to use deep learning methods suchs as a **TensorFlow Estimator** (instead of a Sklearn estimator) or allowing TensorFlow models in the AutoML experiment. An increased efficiency would also be benefitial in cases where the run time is limited (e.g. using a VM from Udacity).
 
 **Data**
+
 AutoML provides extra information about the dataset that might have been overlooked (data guardrails). In our case the data seems to be unbalanced, this might lead to wrong assumptions about the model's metrics due to a high bias towards a class and a high-bias model is most likely to underfit the training data. The reason behind it is that our algorithms are supposed to maximize the accuracy (by reducing the error) and to accomplish this, it is best for most ML models to have balanced classes. Collecting more data (actual or synthetic data, resampling techniques) or doing some extra feature engineering might help fix this issue. 
 
 **Metrics**
+
 Even if the data weren't unbalanced, it is a good practice to look at multiple metrics to correctly evaluate a model. In the particular case of unbalanced data, **Accuracy** as the algorithm's primary metric is not the preferred performance measure to use for classifiers. Some common metrics that provide a better insight are: Confusion matrix, Precision, Recall, F1 Score. Choosing a "better" metric to maximize depends strongly on the context of the problem to solve. For example, if we are more interested in optimizing the detection of the *amount* of clients that might potentially subscribe to a term deposit with the bank, we might want to focus on the **Recall** and sacrifice the **Precision** (precision/recall tradeoff); on the other hand, if what is desired are clients that have a *very high probability* of subscribing then **Precision** would be a better metric to monitor.
 
 **Algorithm**
+
 Trying out multiple algorithms it's almost always a good approach to any machine learning problem. While this issue does not affect the AutoML run, the Hyperdrive uses a custom-coded model for the training. Using different models and not just different parameters could be beneficial (especially with umbalnced datasets), furthermore, increasing a model's complexity might reduce the bias. 
 
 **Hyperparameters**
+
 In the Hyperdrive experiment we used a random sampling method to find the "best" hyperparameters for the model. Alternatively, using a more exhaustive approach such as grid sampling could lead to better hyperparameter values, albeit at a slower sweep speed. Another way could be using a Bayesian sampler, which selects values based on prior values that improved the performance. Some of the child runs from the Hyperdrive experiment showed the same accuracy at different parameter values so the whole sampling needn't be carried out completely, the downside is that Bayesian sampling does not support early termination.
 Last but not least, a validation set could be added for validation of the hyperparameters instead of using cross validation on the training set.
 
