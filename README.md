@@ -91,8 +91,15 @@ In the Hyperdrive experiment we used a random sampling method to find the "best"
 Last but not least, a validation set could be added for validation of the hyperparameters instead of using cross validation on the training set.
 
 ## Resources
+\
 https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/classification-bank-marketing-all-features/auto-ml-classification-bank-marketing-all-features.ipynb
+
 https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier
-https://machinelearningmastery.com/voting-ensembles-with-python/#:~:text=A%20voting%20ensemble%20(or%20a,model%20used%20in%20the%20ensemble.
+
+https://machinelearningmastery.com/voting-ensembles-with-python/#:~:text=A%20voting%20ensemble%20(or%20a,model%20used%20in%20the%20ensemble
+
 https://docs.microsoft.com/en-us/azure/machine-learning/?view=azure-ml-py
+
+https://towardsdatascience.com/methods-for-dealing-with-imbalanced-data-5b761be45a18
+
 Aurélien Géron, *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*, 2nd Edition, September 2019.
