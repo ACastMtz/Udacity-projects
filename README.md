@@ -51,10 +51,19 @@ Finally, the hyperdrive run is submitted and the model from the best run saved.
 
 ## AutoML
 \
-The AutoML classification task was run with similar parameters on the same dataset using **Accuracy** as the primary metric. As already mentioned, the **VotingEnsemble method** yielded the highest accuracy value .
+The AutoML classification task was run with similar parameters on the same dataset using **Accuracy** as the primary metric. As already mentioned, the **VotingEnsemble method** yielded the highest accuracy value. A voting ensemble is a machine learning model that builds predictions from combining results from other models, it is therefore sometimes refered to as a meta-model. More specifically, Azure AutoML uses the **PreFittedVotingClassifier Class** (inherited from sklearn *ensemble VotingClassifier* class) with the parameters following parameters:
+
+  Estimators: Models to include in the voting classifier
+  
+  Weights: Weights for each estimator
+  
+  flatten_transform: Defines the way the results are displayed
 
 ## Pipeline comparison
-**Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
+\
+As a first noticeable difference between the Hyperdrive and the AutoML runs is the higher accuracy provided by the latter method: **0.9073 Hyperdrive < 0.9178 AutoML**. One possible explanation for this is that with Hyperdrive only one model was trained, AutoMl on the other hand trained multiple models and then applied a voting classifier at the end. The advantage of the voting classifier is that it is very useful when the each of combined classifiers already show good performance and through combining them their indiviual weaknesses are reduced. 
+
+Another difference is the time it took for each run to complete: **Hyperdrive appr. 10 min** and **AutoML appr. 20**. This is consistent due to AutoML's thourough search for a good model, it is expected that it takes longer to sweep multiple different models with different parameters, instead of just one custom-coded model as Hyperdrive does. However, one thing worth mentioning is that the fact that Hyperdrive uses a user-defined training script allows for a more direct control over the whole training process, making it easier to follow the pipeline and adjust if necessary to achieve the goal at hand; this could be making a highly accurate model or to expedite the training while maintaining a fairly good accuracy to reduce costs. AutoML experiments are more robust and their running times might be longer, in return, it includes useful machine learning features like model transparency and explainability.
 
 ## Future work
 **What are some areas of improvement for future experiments? Why might these improvements help the model?**
