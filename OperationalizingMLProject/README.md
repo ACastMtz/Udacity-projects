@@ -7,9 +7,10 @@ This project aims to provide an overview on how to create a cloud-based ML model
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/AZ_Arch_Diagram.png?raw=true)
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screencasts required to demonstrate key steps. 
+1. User Authentication: The first step is to provide the credentials and authentication required for logging into the Azure platform. However, this is not required (or even possible) when using the virtual lab offered by Udacity to work on the project. 
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+2. Dataset: Next step is to upload the Bank Marketing dataset to the Azure MK Studio so that it can be used to train the auto ML model.
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/Dataset.png?raw=true)
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
