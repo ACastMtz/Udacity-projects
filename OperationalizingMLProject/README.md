@@ -39,6 +39,8 @@ The interaction is carried out using JSON strings inside the python script *endp
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/endpoints_int.png?raw=true)
 
+When deploying a model it is important to get an idea of an acceptable performance for the HTTP API to keep track of the model's functioning. This is also known as benchmarking and in this project a benchmark is created for the  azurecontainer hosting the deployed model.
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
