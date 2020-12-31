@@ -30,6 +30,12 @@ After the run is completed, the best yielded model is a *VotingEnsemble*, which 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/deploy_aienabled.png?raw=true)
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/logging.png?raw=true)
 
+6. Consumption: To consume the model a Docker container serving Swagger and running locally is downloaded. The swagger instance contains the docuemntation for the HTTP API of the model.
+
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger.png?raw=true)
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger_1.png?raw=true)
+
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
