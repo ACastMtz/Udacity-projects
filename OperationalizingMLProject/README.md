@@ -1,6 +1,6 @@
 # Operationalizing Machine Learning
 
-This project aims to provide an overview on how to create a cloud-based ML model and the production process from loading the dataset till consumption of the deployed model. Once again, the UCI Bank Marketing dataset was used to train a model to predict if a client is likely to subscribe to a term deposit with the bank.
+This project aims to provide an overview on how to create a cloud-based ML model and its production process from loading the dataset till consumption of the deployed model. Once again, the UCI Bank Marketing dataset was used to train a model to predict if a client is likely to subscribe to a term deposit with the bank.
 
 
 ## Architectural Diagram
@@ -13,8 +13,11 @@ This project aims to provide an overview on how to create a cloud-based ML model
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/Dataset.png?raw=true)
 
 3. Auto ML Model: Once the dataset is ready to be used, an automated ML run is created using *Classification* for the type of algorithm.
-![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/automl_completed.png?raw=true)
+
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/automlrun_completed.png?raw=true)
+
 After the run is completed, the best yielded model is a *Voting Ensemble*, which will be deployed in the following step.
+
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/best_model.png?raw=true)
 
 ## Screen Recording
