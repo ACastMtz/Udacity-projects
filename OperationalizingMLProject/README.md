@@ -28,6 +28,7 @@ After the run is completed, the best yielded model is a *VotingEnsemble*, which 
 5. Logging: After deployment, a REST endpoint is created which allows interaction with the HTTP API service over POST requests. A helpful feature is *Application Insights* for debugging in production environments by making it possible to retrieve logs from the deployed model.
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/deploy_aienabled.png?raw=true)
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/logging.png?raw=true)
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
