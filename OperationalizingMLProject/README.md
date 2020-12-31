@@ -21,7 +21,7 @@ After the run is completed, the best yielded model is a *VotingEnsemble*, which 
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/best_model.png?raw=true)
 
-4. Deployment: In order to be consumed, the model needs to be first deployed. This is carried out using an Azure Container Instance.
+4. Deployment: In order to be consumed, the model needs to be first deployed. This can be achieved with an Azure Container Instance.
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/deploy_aidisabled.png?raw=true)
 
@@ -34,6 +34,8 @@ After the run is completed, the best yielded model is a *VotingEnsemble*, which 
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger.png?raw=true)
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger_1.png?raw=true)
+
+The interaction is carried out using JSON strings inside the python script *endpoints.py*.
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/endpoints_int.png?raw=true)
 
