@@ -43,6 +43,14 @@ When deploying a model it is important to get an idea of an acceptable performan
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/benchmark.png?raw=true)
 
+7. Pipeline: Finally, a pipeline with an auto ML step run is created, published and consumed using the python SDK and a jupyter notebook. Pipelines are helpful for automation of different tasks in a workflow. Using the python SDK to automate creation, publishing and consumption of a model is a great tool to make every part of the process be more productive, resilient and scalable.
+
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/Pipeline_running.png?raw=true)
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/widget.png?raw=true)
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/published_pipeline.png?raw=true)
+
+
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
