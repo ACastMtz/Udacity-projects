@@ -35,6 +35,7 @@ After the run is completed, the best yielded model is a *VotingEnsemble*, which 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger.png?raw=true)
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger_1.png?raw=true)
 
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/endpoints_int.png?raw=true)
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
