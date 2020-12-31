@@ -12,6 +12,11 @@ This project aims to provide an overview on how to create a cloud-based ML model
 2. Dataset: Next step is to upload the Bank Marketing dataset to the Azure MK Studio so that it can be used to train the auto ML model.
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/Dataset.png?raw=true)
 
+3. Auto ML Model: Once the dataset is ready to be used, an automated ML run is created using *Classification* for the type of algorithm.
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/automl_completed.png?raw=true)
+After the run is completed, the best yielded model is a *Voting Ensemble*, which will be deployed in the following step.
+![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/best_model.png?raw=true)
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
