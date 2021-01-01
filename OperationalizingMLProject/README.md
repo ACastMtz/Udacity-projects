@@ -13,7 +13,7 @@ This project aims to provide an overview on how to create a cloud-based ML model
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/Dataset.png?raw=true)
 
-3. Auto ML Model: Once the dataset is ready to be used, an automated ML run is created using *Classification* for the type of algorithm.
+3. Auto ML Model: Once the dataset is ready to be used, an automated ML run is created using *Classification* for the type of task.
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/automlrun_completed.png?raw=true)
 
@@ -30,7 +30,7 @@ After the run is completed, the best yielded model is a *VotingEnsemble*, which 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/deploy_aienabled.png?raw=true)
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/logging.png?raw=true)
 
-6. Consumption: To consume the model a Docker container serving Swagger and running locally is downloaded. The swagger instance contains the docuemntation for the HTTP API of the model.
+6. Consumption: To consume the model a Docker container serving *Swagger* and running locally is downloaded. The swagger instance contains the docuemntation for the HTTP API of the model.
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger.png?raw=true)
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger_1.png?raw=true)
@@ -39,7 +39,7 @@ The interaction is carried out using JSON strings inside the python script *endp
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/endpoints_int.png?raw=true)
 
-When deploying a model it is important to get an idea of an acceptable performance for the HTTP API to keep track of the model's functioning. This is also known as benchmarking and in this project a benchmark is created for the  azurecontainer hosting the deployed model.
+When deploying a model it is important to get an idea of an acceptable performance for the HTTP API to keep track of the model's functioning. This is also known as benchmarking and in this project a benchmark is created for the  azurecontainer hosting the deployed model using *Apache benchmark*.
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/benchmark.png?raw=true)
 
