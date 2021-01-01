@@ -59,7 +59,11 @@ When deploying a model it is important to get an idea of an acceptable performan
 Even though the porpose of this project is not to achieve an excellent predictive model but work through the basics of MLOps, there is still, as it is usually the case, room for future improvements:
 
 -> Extending training time
+
 -> Training with batch and online learning
+
 -> Allowing Deep Learning models to be considered in the Auto ML runs
+
 -> Boosting the training speed (assuming also that DL models are being used) by enabling dedicated hardware such as GPUs or TPUs
+
 ->...
