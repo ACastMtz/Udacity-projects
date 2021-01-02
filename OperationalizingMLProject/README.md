@@ -17,7 +17,7 @@ This project aims to provide an overview on how to create a cloud-based ML model
 
   ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/automlrun_completed.png?raw=true)
 
-  After the run is completed, the best yielded model is a *VotingEnsemble*, which will be deployed in the following step.
+* After the run is completed, the best yielded model is a *VotingEnsemble*, which will be deployed in the following step.
 
   ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/best_model.png?raw=true)
 
@@ -50,11 +50,10 @@ This project aims to provide an overview on how to create a cloud-based ML model
   ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/widget.png?raw=true)
   ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/published_pipeline.png?raw=true)
 
-
-
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 As stated in the project's <a href="https://review.udacity.com/#!/rubrics/2893/view">Rubrics</a> a written description of the recording will be provided instead of audio.
+
+
 
 ## Outlook
 Even though the porpose of this project is not to achieve an excellent predictive model but work through the basics of MLOps, there is still, as it is usually the case, room for future improvements:
