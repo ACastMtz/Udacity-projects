@@ -9,7 +9,7 @@ This project aims to provide an overview on how to create a cloud-based ML model
 ## Key Steps
 1. User Authentication: The first step is to provide the credentials and authentication required for logging into the Azure platform. However, this is not required (or even possible) when using the virtual lab offered by Udacity to work on the project. 
 
-2. Dataset: Next step is to upload the Bank Marketing dataset to the Azure ML Studio so that it can be used to train the auto ML model.
+*2. Dataset: Next step is to upload the Bank Marketing dataset to the Azure ML Studio so that it can be used to train the auto ML model.
 
   ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/Dataset.png?raw=true)
 
