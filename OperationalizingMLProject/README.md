@@ -11,31 +11,31 @@ This project aims to provide an overview on how to create a cloud-based ML model
 
 2. Dataset: Next step is to upload the Bank Marketing dataset to the Azure ML Studio so that it can be used to train the auto ML model.
 
-![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/Dataset.png?raw=true)
+* ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/Dataset.png?raw=true)
 
 3. Auto ML Model: Once the dataset is ready to be used, an automated ML run is created using *Classification* for the type of task to train several models using different combinations of algorithms and hyperparameters. *Accuracy* was chosen as the primary metric for the run.
 
-![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/automlrun_completed.png?raw=true)
+* ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/automlrun_completed.png?raw=true)
 
-After the run is completed, the best yielded model is a *VotingEnsemble*, which will be deployed in the following step.
+* After the run is completed, the best yielded model is a *VotingEnsemble*, which will be deployed in the following step.
 
-![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/best_model.png?raw=true)
+* ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/best_model.png?raw=true)
 
 4. Deployment: In order to be consumed, the model needs to be first deployed. This can be achieved with an Azure Container Instance (ACI), thus exposing the model.
 
-![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/deploy_aidisabled.png?raw=true)
+* ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/deploy_aidisabled.png?raw=true)
 
 5. Logging: After deployment, a REST endpoint is created which allows interaction with the HTTP API service over POST requests. A helpful feature within the ACI is *Application Insights* for debugging and troubleshooting in production environments by making it possible to retrieve logs from the deployed model.
 
-![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/deploy_aienabled.png?raw=true)
-![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/logging.png?raw=true)
+* ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/deploy_aienabled.png?raw=true)
+* ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/logging.png?raw=true)
 
 6. Consumption: To consume the model a Docker container serving *Swagger* and running locally is downloaded. The swagger instance contains the docuemntation for the HTTP API of the model.
 
-![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger.png?raw=true)
-![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger_1.png?raw=true)
+* ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger.png?raw=true)
+* ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger_1.png?raw=true)
 
-The interaction is carried out by feeding JSON strings inside the python script *endpoints.py* to the Swagger server. By sending HTTP POST requests to the server's endpoint and the JSON payload, the model can make predictions and send them back as HTTP POST responses.
+* The interaction is carried out by feeding JSON strings inside the python script *endpoints.py* to the Swagger server. By sending HTTP POST requests to * the server's endpoint and the JSON payload, the model can make predictions and send them back as HTTP POST responses.
 
 ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/endpoints_int.png?raw=true)
 
