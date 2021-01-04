@@ -53,7 +53,7 @@ This project aims to provide an overview on how to create a cloud-based ML model
 ## Screen Recording
 As stated in the project's <a href="https://review.udacity.com/#!/rubrics/2893/view">Rubrics</a> a written description of the recording will be provided instead of audio.
 
-# General Description
+### General Description
 
 * To make it feasible to describe the main topics of the project within a 5 min long video, the startpoint is after the dataset was uploaded and the auto ML model was trained and deployed. Firstly, it shows a deployed working ML model and the initial steps needed to interact with the model hosted by the ACI. Then it shows the model available on the swagger-ui. Afterwards, different HTTP requests are sent to interact with the sever. Then benchmarking follows and finally the pipeline published using Jupyter notebook.
 
