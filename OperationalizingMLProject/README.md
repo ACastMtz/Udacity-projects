@@ -17,9 +17,9 @@ This project aims to provide an overview on how to create a cloud-based ML model
 
    ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/automlrun_completed.png?raw=true)
 
-* After the run is completed, the best yielded model is a *VotingEnsemble*, which will be deployed in the following step.
+  * After the run is completed, the best yielded model is a *VotingEnsemble*, which will be deployed in the following step.
 
-   ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/best_model.png?raw=true)
+     ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/best_model.png?raw=true)
 
 4. Deployment: In order to be consumed, the model needs to be first deployed. This can be achieved with an Azure Container Instance (ACI), thus exposing the model.
 
@@ -35,13 +35,13 @@ This project aims to provide an overview on how to create a cloud-based ML model
    ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger.png?raw=true)
    ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/swagger_1.png?raw=true)
 
-* The interaction is carried out by feeding JSON strings inside the python script *endpoints.py* to the Swagger server. By sending HTTP POST requests to the server's endpoint and the JSON payload, the model can make predictions and send them back as HTTP POST responses.
+  * The interaction is carried out by feeding JSON strings inside the python script *endpoints.py* to the Swagger server. By sending HTTP POST requests to the server's endpoint and the JSON payload, the model can make predictions and send them back as HTTP POST responses.
 
-   ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/endpoints_int.png?raw=true)
+     ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/endpoints_int.png?raw=true)
 
-* When deploying a model it is important to get an idea of an acceptable performance for the HTTP API to keep track of the model's functioning. This is also known as benchmarking and it is an importatnt step of a MLOps environment. In this project a benchmark is created for the  Azure container hosting the deployed model using *Apache Benchmark* which leverages the REST APIs reponses to monitor the model's performance.
+  * When deploying a model it is important to get an idea of an acceptable performance for the HTTP API to keep track of the model's functioning. This is also known as benchmarking and it is an importatnt step of a MLOps environment. In this project a benchmark is created for the  Azure container hosting the deployed model using *Apache Benchmark* which leverages the REST APIs reponses to monitor the model's performance.
 
-   ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/benchmark.png?raw=true)
+     ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/benchmark.png?raw=true)
 
 7. Pipeline: Finally, a pipeline with an auto ML step run is created, published and consumed using the python SDK and a jupyter notebook (see aml-pipelines-with-automated-machine-learning-step.ipynb in the project's repository). Pipelines are helpful for automation of different tasks in a workflow. Using the python SDK to automate creation, publishing and consumption of a model is a great tool to make every part of the process be more productive, resilient and scalable.
 
