@@ -53,6 +53,22 @@ This project aims to provide an overview on how to create a cloud-based ML model
 ## Screen Recording
 As stated in the project's <a href="https://review.udacity.com/#!/rubrics/2893/view">Rubrics</a> a written description of the recording will be provided instead of audio.
 
+# General Description
+
+* To make it feasible to describe the main topics of the project within a 5 min long video, the startpoint is after the dataset was uploaded and the auto ML model was trained and deployed. Firstly, it shows a deployed working ML model and the initial steps needed to interact with the model hosted by the ACI. Then it shows the model available on the swagger-ui. Afterwards, different HTTP requests are sent to interact with the sever. Then benchmarking follows and finally the pipeline published using Jupyter notebook.
+
+* Script:
+
+ * [0:00 - 1:10] After uploading the UCI Bank Marketing dataset, I ran an autoML experiment which yielded a VotingEnsemble as the best trained model. This model was then deployed on an Azure Container Instance and here we can see Run 1 being successfully completed and under "Deploy status" the name of the best model deployment. By clicking on this link we can find the information of the deployed model so that we can copy the REST enpoint URL needed in the next steps. For consumption we also need the primary key, which can be found in the Consume section. We then updated the URL and the key in the endpoint file which is the python script that is required to interact with the HTTP API. The same process has to be done for the benchmark file which is the shell file for benchmarking.
+ 
+ * [1:11 - 2:10] We then run the swagger.sh file to download a swagger instance, which is running locally, to allow us to consume the model. Please note that the swagger.json file from the deployed modeled has already been downloaded and placed in the same folder with all the other files needed for swagger to function properly. After this is done, we access the instance locally. Note that it is running on port 9000. We then run the serve.py python script to serve our model to the swagger instance by creating a HTTP server to expose the downloaded swagger.json file for the local swagger-ui to use it. We then go to to local port 9000 where we can see the deployed autoML model available on the swagger-ui.
+ 
+ * [2:11 - 2:49] Then we run the endpoint.py script to feed API requests to the server's endpoint with a JSON payload. We then get a reponse that can be seen here on the command line console and if we change the information of one of the JSON strings from the endpoint.py scripy we could get a different response, which we do as we can see here.
+ 
+ * [2:50 - 3:04] The last part here is to benchmark the API. To do so, we run the benchmark.sh script. The script runs Apache Benchmark 10 times and here we get the information of the requests. We can see here the time it took for the API to process the 10 requests but also the average time per request along with a lot more details.
+ 
+ * [3:05 - ]
+
 The video can be found following <a href="https://youtu.be/Rn81BkKon_A">this link</a>
 
 
