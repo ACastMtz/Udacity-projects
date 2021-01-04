@@ -18,8 +18,7 @@ This project aims to provide an overview on how to create a cloud-based ML model
    ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/automlrun_completed.png?raw=true)
 
   * After the run is completed, the best yielded model is a *VotingEnsemble*, which will be deployed in the following step.
-
-     ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/best_model.png?raw=true)
+    ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/best_model.png?raw=true)
 
 4. Deployment: In order to be consumed, the model needs to be first deployed. This can be achieved with an Azure Container Instance (ACI), thus exposing the model.
 
