@@ -53,7 +53,7 @@ This project aims to provide an overview on how to create a cloud-based ML model
 ## Screen Recording
 As stated in the project's <a href="https://review.udacity.com/#!/rubrics/2893/view">Rubrics</a> a written description of the recording will be provided instead of audio.
 
-The video can be found following <a href="https://youtu.be/Rn81BkKon_A">this link</a>.
+The video can be found following <a href="https://youtu.be/4gdzvKhe5bE">this link</a>.
 
 
 ### General Description
