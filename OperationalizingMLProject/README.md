@@ -48,6 +48,7 @@ This project aims to provide an overview on how to create a cloud-based ML model
    ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/ds_automlmod.png?raw=true)
    ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/widget.png?raw=true)
    ![alt text](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/published_pipeline.png?raw=true)
+   ![bla](https://github.com/ACastMtz/Udacity-projects/blob/main/OperationalizingMLProject/Images/pipeline_endpoint.png?raw=true)
 
 ## Screen Recording
 As stated in the project's <a href="https://review.udacity.com/#!/rubrics/2893/view">Rubrics</a> a written description of the recording will be provided instead of audio.
