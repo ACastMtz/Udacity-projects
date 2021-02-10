@@ -9,7 +9,6 @@ from sklearn.preprocessing import OneHotEncoder
 import pandas as pd
 from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
-import joblib
 
 # TODO: Create TabularDataset using TabularDatasetFactory
 # Data is located at:
