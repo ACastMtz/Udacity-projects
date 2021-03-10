@@ -16,9 +16,9 @@ In this project, the *lending club* dataset from the LendingClub American peer-t
 Below is a table with all the inormation available in the dataset for training the model.
         
    |      LoanStatNew     | Description                                                                                               |
-   "|:--------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-   "| loan_amnt            | The listed amount of the loan applied for by the borrower. If at some point in time, the credit department reduces the loan amount, then it will be reflected in this value.                             |
-   "| term                 | The number of payments on the loan. Values are in months and can be either 36 or 60.                                                                                                                     |
+   |:--------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+   | loan_amnt            | The listed amount of the loan applied for by the borrower. If at some point in time, the credit department reduces the loan amount, then it will be reflected in this value. |
+   | term                 | The number of payments on the loan. Values are in months and can be either 36 or 60.  |
    "| int_rate             | Interest Rate on the loan                                                                                                                                                                                |
    "| installment          | The monthly payment owed by the borrower if the loan originates.                                                                                                                                         |
    "| grade                | LC assigned loan grade                                                                                                                                                                                   |
