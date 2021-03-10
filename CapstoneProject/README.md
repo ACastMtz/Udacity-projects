@@ -50,7 +50,7 @@ Below is a table with all the inormation available in the dataset for training t
 The task at hand is therefore, not only to train an accurate predicitive model usin a logistic regression algorithm, but also to gain an insight into the most important features that determine the result yielded by the model. This allows the company to understand which variables are strong indicators of loan default and apply this knowledge in future risk assessment.
 
 ### Access
-The dataset was uploaded to the work folder and access locally.
+The dataset was uploaded to the work folder and accessed locally.
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
 
