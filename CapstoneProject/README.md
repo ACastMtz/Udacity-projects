@@ -13,7 +13,7 @@
 
 In this project, the *lending club* dataset from the LendingClub American peer-to-peer lending company was used. The purpose is to use data for risk analytics and minimization in a banking and financial context. To achieve that, statistical information about past loan applicants is used to build a model using supervised learning, where the labels are whether or not the applicant failed to fully repay the loan, to be able to predict if a new applicant is likely to repay the loan. The aim is for the model to identify patterns in the dataset that can be used to determine the outcome of the new application based on the financial history of the applicant. In this way, the probability of defaulting the loan can be assessed and lenders can make an informed decision accordingly that may reduce the loss of business for the company by cutting down the credit loss, e.g. by denying the loan, raising interest rates, offering a different loan amount, etc.
 
-Below is a table with all the inormation available in the dataset for training the model.
+Below is a table with all the information available in the dataset for training the model.
         
    |      LoanStatNew     | Description                                                                                               |
    |:--------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
