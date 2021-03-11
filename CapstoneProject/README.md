@@ -47,7 +47,7 @@ Below is a table with all the information available in the dataset for training 
    | pub_rec_bankruptcies | Number of public record bankruptcies   |
 
 ### Task
-The task at hand is therefore, not only to train an accurate predicitive model usin a logistic regression algorithm, but also to gain an insight into the most important features that determine the result yielded by the model. This allows the company to understand which variables are strong indicators of loan default and apply this knowledge in future risk assessment.
+The task at hand is, not only to train an accurate predicitive model using a logistic regression algorithm, but also to gain an insight into the most important features that determine the result yielded by the model. This allows the company to understand which variables are strong indicators of loan default and apply this knowledge in future risk assessment.
 
 ### Access
 The dataset can be found and downloaded from Kaggle [here](https://www.kaggle.com/wordsforthewise/lending-club). It was then uploaded to the work folder and accessed locally.
