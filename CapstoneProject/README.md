@@ -18,7 +18,7 @@ To be able to follow along this project on remote compute resources the followin
 7. Create a compute instance to run the notebooks
 8. Open the jupyter notebooks and run the cells 
 
-### Project's Workflow
+### Project Overview
 We will train and optimize an Azure ML pipeline using two different methods: **Hyperparameter Tuning using Azure's Hyperdrive** and **Auto Machine Learning**. For the Hyperdrive run, a simple ligistic regression model was chosen. The best model from both approaches is then deployed to be interacted with.
 
 Below is an overview of the workflow
@@ -71,7 +71,9 @@ Below is a table with all the information available in the dataset for training 
    | pub_rec_bankruptcies | Number of public record bankruptcies   |
 
 ### Task
-The task at hand is a classification task, that is, to train an accurate model using a logistic regression algorithm to predict a discrete class label output defining, but also to gain an insight into the most important features that determine the result yielded by the model. This allows the company to understand which variables are strong indicators of loan default and apply this knowledge in future risk assessment.
+The task at hand is a classification task, that is, to train an accurate model using a logistic regression algorithm to predict a discrete class label output defining if the loan will result in default or not. 
+
+At the same time, we'll gain an insight into the most important features that determine the result yielded by the model. This allows the company to understand which variables are strong indicators of loan default and apply this knowledge in future risk assessment.
 
 ### Access
 The dataset can be found and downloaded from Kaggle [here](https://www.kaggle.com/wordsforthewise/lending-club). It was then uploaded to the work folder and accessed locally.
@@ -98,7 +100,7 @@ We define first the settings and cofiguration needed for the auto machine learni
 
 `experiment_timeout_minutes` : defines how long the experiment can be run, if too low the experiment might not run, if too high experiment time out failures may occur and lead to unnecessary expenses
 
-`task` : type of experiment, in this case, regression
+`task` : type of experiment, in this case, classification
 
 `primary_metric` : main metric for the model to look at during training
 
@@ -113,6 +115,15 @@ We define first the settings and cofiguration needed for the auto machine learni
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+
+With the above configuration the AutoML run takes approx. 
+The AutoML classification task was run with similar parameters on the same dataset using Accuracy as the primary metric, as well as adding a couple more parameters such as n_cross_validations (number of cross validations to perform if validation data is not specified), max_cores_per_iteration (maximum number of threads per iteration, -1 uses all available cores), and max_concurrent_iterations (maximum number of iterations executed in parallel). As already mentioned, the VotingEnsemble method yielded the highest accuracy value. A voting ensemble is a machine learning model that builds predictions from combining results from other models, it is therefore sometimes refered to as a meta-model. More specifically, Azure AutoML uses the PreFittedVotingClassifier Class (inherited from sklearn ensemble VotingClassifier class) with the parameters following parameters:
+
+
+
+![RunDetails Widget](./Images/RunDets_automl.png "RunDetails widget")
+
+![Best Model](./Images/bestModel_automl.png "AutoML Best Model")
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
