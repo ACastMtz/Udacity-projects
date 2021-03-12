@@ -1,8 +1,8 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
-# Your Project Title Here
+# Loan Default Prediction
 
 *TODO:* Write a short introduction to your project.
+For the **Capstone Project** from Udacity's Nanodegree *Machine Learning Engineer with Microsoft Azure Nanodegree* 
+Borrower failure risk refers to the danger that a counterparty or group of counterparties may delay, make partial repayment or even default on repaying a loan to the lender. 
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
