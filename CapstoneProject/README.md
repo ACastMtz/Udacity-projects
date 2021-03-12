@@ -27,7 +27,7 @@ Below is an overview of the workflow
 <p align="center">
   <img src="./Images/capstone-diagram.png" />
 </p>
-  **Project's Workflow. From Udacity's Machine Learning Engineer with Microsoft Azure Nanodegree** 
+  <center>**Project's Workflow. From Udacity's Machine Learning Engineer with Microsoft Azure Nanodegree**</center> 
 
 ## Dataset
 
