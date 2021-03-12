@@ -18,7 +18,7 @@ To be able to follow along this project on remote compute resources the followin
 7. Create a compute instance to run the notebooks
 8. Open the jupyter notebooks and run the cells 
 
-### Project Overview
+### Project's Workflow
 We will train and optimize an Azure ML pipeline using two different methods: **Hyperparameter Tuning using Azure's Hyperdrive** and **Auto Machine Learning**. For the Hyperdrive run, a simple ligistic regression model was chosen. The best model from both approaches is then deployed to be interacted with.
 
 Below is an overview of the workflow
@@ -71,7 +71,7 @@ Below is a table with all the information available in the dataset for training 
    | pub_rec_bankruptcies | Number of public record bankruptcies   |
 
 ### Task
-The task at hand is, not only to train an accurate predicitive model using a logistic regression algorithm, but also to gain an insight into the most important features that determine the result yielded by the model. This allows the company to understand which variables are strong indicators of loan default and apply this knowledge in future risk assessment.
+The task at hand is a classification task, that is, to train an accurate model using a logistic regression algorithm to predict a discrete class label output defining, but also to gain an insight into the most important features that determine the result yielded by the model. This allows the company to understand which variables are strong indicators of loan default and apply this knowledge in future risk assessment.
 
 ### Access
 The dataset can be found and downloaded from Kaggle [here](https://www.kaggle.com/wordsforthewise/lending-club). It was then uploaded to the work folder and accessed locally.
