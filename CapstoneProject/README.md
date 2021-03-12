@@ -12,9 +12,9 @@ To be able to follow along this project on remote compute resources the followin
 1. Log into your Azure account
 2. Create a Workspace
 3. Acces the ML Studio
-4. Clone or download the notebooks and scripts from this repo: 'hyperparameter_tuning.ipynb', 'automl.ipynb', 'train.py' and 'endpoint.py', and upload them to your working folder in the Studio
+4. Clone or download the notebooks and scripts from this repo: `hyperparameter_tuning.ipynb`, `automl.ipynb`, `train.py` and `endpoint.py`, and upload them to your working folder in the Studio
 5. Download the **LendingClub** dataset from Kaggle [here](https://www.kaggle.com/wordsforthewise/lending-club) and upload it to the Studio
-6. [OPTIONAL] Create a folder called "Data" and move the dataset there. The notebooks access the data from this folder, if there is no "Data" folder the code in the notebooks and the 'train.py' script will have to be changed to the path where the dataset is
+6. [OPTIONAL] Create a folder called "Data" and move the dataset there. The notebooks access the data from this folder, if there is no "Data" folder the code in the notebooks and the `train.py` script will have to be changed to the path where the dataset is
 7. Create a compute instance to run the notebooks
 8. Open the jupyter notebooks and run the cells 
 
@@ -75,8 +75,9 @@ The task at hand is, not only to train an accurate predicitive model using a log
 
 ### Access
 The dataset can be found and downloaded from Kaggle [here](https://www.kaggle.com/wordsforthewise/lending-club). It was then uploaded to the work folder and accessed locally.
+
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
