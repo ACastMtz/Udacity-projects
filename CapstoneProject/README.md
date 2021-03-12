@@ -83,29 +83,30 @@ df = pd.read_csv('./Data/lending_club_loan.csv')
 ## Automated ML
 
 ### AutoML Configuration
-The automl settings and cofiguration in order of appearance are:
 
-`enable_early_stopping` : this parameter allows for the run to be stopped if the model's score has not benn iteratively improving.
+We define first the settings and cofiguration needed for the auto machine learning run:
 
-`max_concurrent_iterations': the maximum number of iterations allowed to be executed parallelly.
+`enable_early_stopping` : this parameter allows for the run to be stopped if the model's score has not benn iteratively improving
 
-`max_cores_per_iteration`: cores from compute that are to be used per each iteration during training (-1 means all available).
+`max_concurrent_iterations`: the maximum number of iterations allowed to be executed parallelly
+
+`max_cores_per_iteration`: cores from compute that are to be used per each iteration during training
 
 `verbosity` : amount of information included in the training logs
 
 `compute_traget` : compute to be used for training
 
-`experiment_timeout_minutes` : defines how long the experiment can be run, if too low the experiment might not run, if too high experiment time out failures may occur and lead to unnecessary expenses.
+`experiment_timeout_minutes` : defines how long the experiment can be run, if too low the experiment might not run, if too high experiment time out failures may occur and lead to unnecessary expenses
 
-`task` : type of experiment, in this case, regression.
+`task` : type of experiment, in this case, regression
 
-`primary_metric` : main metric for the model to look at during training.
+`primary_metric` : main metric for the model to look at during training
 
-`training_data` : data to use for training the model.
+`training_data` : data to use for training the model
 
-`label_column_name` : name of column containing the labels for supervised training.
+`label_column_name` : name of column containing the labels for supervised training
 
-`n_cross_validations` : number of cross validations to perform after the normal training run. Useful if no validation set is provided, the metrics' values are averaged over (in this case 3) different sets of values. 
+`n_cross_validations` : number of cross validations to perform after the normal training run. Useful if no validation set is provided, the metrics' values are averaged over different sets of values
 
 
 ### Results
