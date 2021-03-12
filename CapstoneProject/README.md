@@ -1,12 +1,37 @@
 # Loan Default Prediction
 
 This is the **Capstone Project** from Udacity's Nanodegree *Machine Learning Engineer with Microsoft Azure Nanodegree* and its objective is to apply the acquired knowledge to build a ML model and deploy it using an external dataset (i.e. not included in the Azure environment) and in that way emulate a somewhat more realistic scenario.
-We will be using the **LendingClub** dataset for borrower failure risk analysis, that is, analysing the factors that contribute to increase or decrease the danger that a *loaner* may default on repaying a loan to the *lender*. The overall goal is to learn how real world problems can be solved, particularly in the context of risk analytics in banking and financial services,using Machine Learning.
+
+We will be using the **LendingClub** dataset for borrower failure risk analysis, that is, analysing the factors that contribute to increase or decrease the danger that a *loaner* may default on repaying a loan to the *lender*. The overall goal is to learn how real world problems can be solved, particularly in the context of risk analytics in banking and financial services, using Machine Learning.
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
+### Prerequisites
+To be able to follow along this project on remote compute resources the following steps are needed:
 
+1. Log into your Azure account
+2. Create a Workspace
+3. Acces the ML Studio
+4. Clone or download the notebooks and scripts from this repo and upload them to your working folder in the Studio
+5. Download the **LendingClub** dataset from Kaggle [here](https://www.kaggle.com/wordsforthewise/lending-club) and upload it to the Studio
+6. [OPTIONAL] Create a folder called "Data" and move the dataset there. The notebooks access the data from this folder, if there is no "Data" folder the code in |train.py| script will have to be changed to the path where the dataset is.
+7. Create a compute instance to run the notebooks
+8. Open the notebooks and run the cells 
+
+You'll use the training and deployment workflow for Azure Machine Learning in a Python Jupyter Notebook. 
+
+
+Prerequisites
+
+Create a workspace
+Clone the tutorials notebook to your folder in the workspace.
+Create a cloud-based compute instance.
+In your cloned tutorials/image-classification-mnist-data folder, open the img-classification-part1-training.ipynb notebook.
+
+
+Train a simple logistic regression model on a remote cluster.
+Review training results and register the best model.
 
 This project is part of the Udacity Azure ML Nanodegree. In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model. This model is then compared to an Azure AutoML run.
 
