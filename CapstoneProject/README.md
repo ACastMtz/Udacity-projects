@@ -2,6 +2,8 @@
 
 *TODO:* Write a short introduction to your project.
 For the **Capstone Project** from Udacity's Nanodegree *Machine Learning Engineer with Microsoft Azure Nanodegree* 
+This project is part of the Udacity Azure ML Nanodegree. In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model. This model is then compared to an Azure AutoML run.
+
 Borrower failure risk refers to the danger that a counterparty or group of counterparties may delay, make partial repayment or even default on repaying a loan to the lender. 
 
 ## Project Set Up and Installation
