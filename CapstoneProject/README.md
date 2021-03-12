@@ -17,7 +17,7 @@ To be able to follow along this project on remote compute resources the followin
 5. Download the **LendingClub** dataset from Kaggle [here](https://www.kaggle.com/wordsforthewise/lending-club) and upload it to the Studio
 6. [OPTIONAL] Create a folder called "Data" and move the dataset there. The notebooks access the data from this folder, if there is no "Data" folder the code in |train.py| script will have to be changed to the path where the dataset is
 7. Create a compute instance to run the notebooks
-8. Open the jupyter notebooks (hyperparameters.ipynb and/or automl.ipynb) and run the cells 
+8. Open the jupyter notebooks (hyperparameter_tuning.ipynb and/or automl.ipynb) and run the cells 
 
 
 
