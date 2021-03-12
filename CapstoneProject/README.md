@@ -29,7 +29,7 @@ Below is an overview of the workflow
 </p>
 
 <p align="center" style="font-size:10px">
-  <b>Project's Workflow. From Udacity's Machine Learning Engineer with Microsoft Azure Nanodegree.</b>
+  <b>Project's Workflow. From Udacity's "Machine Learning Engineer with Microsoft Azure Nanodegree".</b>
 </p>
 
 ## Dataset
