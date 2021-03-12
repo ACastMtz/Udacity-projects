@@ -24,9 +24,8 @@ We will train and optimize an Azure ML pipeline using two different methods: **H
 
 Below is an overview of the workflow:
 
-![Project's workflow](./Images/capstone-diagram.png "From Udacity's *Machine Learning Engineer with Microsoft Azure* Nanodegree.")
 
-.center[![My image](./Images/capstone-diagram.png).caption[**Fig. 1:** Image caption]]
+.center[ ![My image](./Images/capstone-diagram.png) .caption[**Fig. 1:** Image caption]]
 
 
 ## Dataset
