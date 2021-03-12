@@ -1,6 +1,6 @@
 # Loan Default Prediction
 
-This is the **Capstone Project** from Udacity's Nanodegree *Machine Learning Engineer with Microsoft Azure Nanodegree* and its objective is to apply the acquired knowledge to build a ML model and deploy it using an external dataset (i.e. not included in the Azure environment) and in that way emulate a somewhat more realistic scenario.
+This is the **Capstone Project** from Udacity's *Machine Learning Engineer with Microsoft Azure Nanodegree* and its objective is to apply the acquired knowledge to build a ML model and deploy it using an external dataset (i.e. not included in the Azure environment) and in that way emulate a somewhat more realistic scenario.
 
 We will be using the **LendingClub** dataset for borrower failure risk analysis, that is, analysing the factors that contribute to increase or decrease the danger that a *loaner* may default on repaying a loan to the *lender*. The overall goal is to learn how real world problems can be solved, particularly in the context of risk analytics in banking and financial services, using Machine Learning.
 
@@ -26,6 +26,7 @@ Below is an overview of the workflow:
 
 
    ![Project Workflow](./Images/capstone-diagram.png)
+   **Project's Workflow. From Udacity's Machine Learning Engineer with Microsoft Azure Nanodegree**
 
 
 ## Dataset
