@@ -22,14 +22,12 @@ To be able to follow along this project on remote compute resources the followin
 ### Project Overview
 We will train and optimize an Azure ML pipeline using two different methods: **Hyperparameter Tuning using Azure's Hyperdrive** and **Auto Machine Learning**. For the Hyperdrive run, a simple ligistic regression model was chosen. The best model from both approaches is then deployed to be interacted with.
 
-Below is an overview of the workflow:
-
-   **Project's Workflow. From Udacity's Machine Learning Engineer with Microsoft Azure Nanodegree**
+Below is an overview of the workflow
 
 <p align="center">
   <img src="./Images/capstone-diagram.png" />
-  **Project's Workflow. From Udacity's Machine Learning Engineer with Microsoft Azure Nanodegree** 
 </p>
+  **Project's Workflow. From Udacity's Machine Learning Engineer with Microsoft Azure Nanodegree** 
 
 ## Dataset
 
