@@ -20,7 +20,10 @@ To be able to follow along this project on remote compute resources the followin
 8. Open the jupyter notebooks and run the cells 
 
 ### Project Overview
-We will train and optimize an Azure ML pipeline using two different methods: **Hyperparameter Tuning using Azure's Hyperdrive** and **Auto Machine Learning**. For the Hyperdrive run, a simple ligistic regression model was chosen. The best model from both approaches is then deployed as a REST
+We will train and optimize an Azure ML pipeline using two different methods: **Hyperparameter Tuning using Azure's Hyperdrive** and **Auto Machine Learning**. For the Hyperdrive run, a simple ligistic regression model was chosen. The best model from both approaches is then deployed to be interacted with.
+
+Below is an overview of the workflow:
+![Philadelphia's Magic Gardens. This place was so cool!](/assets/images/philly-magic-gardens.jpg "Philadelphia's Magic Gardens")
 
 
 
