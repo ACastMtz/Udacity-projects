@@ -15,19 +15,11 @@ To be able to follow along this project on remote compute resources the followin
 3. Acces the ML Studio
 4. Clone or download the notebooks and scripts from this repo and upload them to your working folder in the Studio
 5. Download the **LendingClub** dataset from Kaggle [here](https://www.kaggle.com/wordsforthewise/lending-club) and upload it to the Studio
-6. [OPTIONAL] Create a folder called "Data" and move the dataset there. The notebooks access the data from this folder, if there is no "Data" folder the code in |train.py| script will have to be changed to the path where the dataset is.
+6. [OPTIONAL] Create a folder called "Data" and move the dataset there. The notebooks access the data from this folder, if there is no "Data" folder the code in |train.py| script will have to be changed to the path where the dataset is
 7. Create a compute instance to run the notebooks
-8. Open the notebooks and run the cells 
-
-You'll use the training and deployment workflow for Azure Machine Learning in a Python Jupyter Notebook. 
+8. Open the jupyter notebooks (hyperparameters.ipynb and/or automl.ipynb) and run the cells 
 
 
-Prerequisites
-
-Create a workspace
-Clone the tutorials notebook to your folder in the workspace.
-Create a cloud-based compute instance.
-In your cloned tutorials/image-classification-mnist-data folder, open the img-classification-part1-training.ipynb notebook.
 
 
 Train a simple logistic regression model on a remote cluster.
