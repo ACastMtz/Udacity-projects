@@ -25,7 +25,8 @@ We will train and optimize an Azure ML pipeline using two different methods: **H
 Below is an overview of the workflow:
 
 
-.center[ ![My image](./Images/capstone-diagram.png) .caption[**Fig. 1:** Image caption]]
+.[ ![Project Workflow](./Images/capstone-diagram.png) 
+.caption[**Fig. 1:** Image caption]]
 
 
 ## Dataset
