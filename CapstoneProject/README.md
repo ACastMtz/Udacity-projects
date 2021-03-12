@@ -76,6 +76,8 @@ The task at hand is, not only to train an accurate predicitive model using a log
 ### Access
 The dataset can be found and downloaded from Kaggle [here](https://www.kaggle.com/wordsforthewise/lending-club). It was then uploaded to the work folder and accessed locally.
 
+  df = pd.read_csv('./Data/lending_club_loan.csv')
+
 ## Automated ML
 
 
