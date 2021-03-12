@@ -25,10 +25,8 @@ We will train and optimize an Azure ML pipeline using two different methods: **H
 Below is an overview of the workflow:
 
 
-.center{![Project Workflow](./Images/capstone-diagram.png)}
+        ![Project Workflow](./Images/capstone-diagram.png)
 
-
-<div style="text-align:center"><img src="./Images/capstone-diagram.png" /></div>
 
 ## Dataset
 
