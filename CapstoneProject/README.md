@@ -5,7 +5,6 @@ This is the **Capstone Project** from Udacity's *Machine Learning Engineer with 
 We will be using the **LendingClub** dataset for borrower failure risk analysis, that is, analysing the factors that contribute to increase or decrease the danger that a *loaner* may default on repaying a loan to the *lender*. The overall goal is to learn how real world problems can be solved, particularly in the context of risk analytics in banking and financial services, using Machine Learning.
 
 ## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
 ### Prerequisites
 To be able to follow along this project on remote compute resources the following steps are needed:
