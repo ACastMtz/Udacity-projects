@@ -164,6 +164,19 @@ From the two training strategies, the model with the best performance was the `V
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
+We first save the model that we have selected and then register it.
+
+$$$$ IMAGE WITH REGISTERED MODEL  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+After registration, we need to define a custom environment to be used for depolyment. This is done using the `InferenceConfig` Class.
+
+The two main parameters for the `InferenceConfig` object are:
+
+ - `entry_script` : contains the script for model scoring
+ - `environment` : contains the Python dependencies and variables used in the machine learning experiment, including data preparation, training, and deployment
+
+Both parameters can be retrieved from the `outputs` folder from the saved model, the `scoring.py` and `env.yml` files respectively. 
+
 To be able to consume the model, it needs to be deployed. The deployment of the model to the **ACI** creates a REST endpoint and exposes it to allow interactions via a HTTP API service over POST requests.
 
 
