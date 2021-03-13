@@ -71,7 +71,7 @@ Below is a table with all the information available in the dataset for training 
    | pub_rec_bankruptcies | Number of public record bankruptcies   |
 
 ### Task
-The task at hand is a classification task, that is, to train an accurate model using a logistic regression algorithm to predict a discrete class label output defining if the loan will result in default or not. 
+The task at hand is a classification task, that is, to train an accurate model using a logistic regression algorithm to predict a discrete class label output defining if the loan will result in default or not. The common metric to consider for this kind of task is `Accuracy`.
 
 At the same time, we'll gain an insight into the most important features that determine the result yielded by the model. This allows the company to understand which variables are strong indicators of loan default and apply this knowledge in future risk assessment.
 
@@ -84,7 +84,7 @@ df = pd.read_csv('./Data/lending_club_loan.csv')
 
 ## Automated ML
 
-Azure's `automl` is a very helpful tool to effectively and automatically, albeit slow, sweep through various different models with different parameters. It has a high probability to find a good model according to a predefined metric because it is not restricted to just one model, at the cost of a longer training time.
+Azure's `automl` is a very helpful tool to effectively and automatically, albeit slow, sweep through various different models with different parameters. It has a high probability to find a good model according to a predefined metric because it is not restricted to just one model, at the cost of a longer training time. 
 
 ### AutoML Configuration
 
@@ -131,7 +131,7 @@ Here a couple of screenshots of the best model:
 
 ![Best Model 2](./Images/automl_bestmodel_2.png "AutoML Best Model 2")
 
-Given the exhaustive search carried out by the `automl` run, in order to improve the results it is probably a better idea to try to optimize other steps of the workflow, e.g., getting a larger dataset not only with more data points but also to expand the feature space with a more thorough EDA step.
+In order to improve the results from the `automl` run we could try allowing deep learning methods in the batch of models to try during the execution of the experiment. Optimizing other steps of the workflow might also influence the end results in a positive way such as getting a larger dataset thorough e.g. resampling techniques or expanding the feature space with a more thorough EDA step of feature engineering.
 
 ## Hyperparameter Tuning
 
@@ -144,9 +144,6 @@ Regularization is used to prevent the model from overfitting when many features 
 The second hyperparameter, maximum number of iterations, is the number of iterations that are allowed for the model to converge, in this case when the accuracy is at its maximum value, given a set of parameters. This hyperparameter is used to prevent the model to overfit and/or run without converging and it can be equal to one of the following 4 values: `choice(100,200,500,1000)`.
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 A screenshot of the `RunDetails` widget shows the run finished successfully and provides an overview as well of the first top five child runs:
 
@@ -156,7 +153,11 @@ The `Hyperdirve`'s best run yielded an `Accuracy = 0.8367` for the logistic regr
 
 ![Best Model Hyper](./Images/hyper_bestmodel.png "Hyperdrive Best Model")
 
+To get better results, we could try two approaches:
 
+The `Hyperdrive` trains a single model, this could hinder the experiment from yielding optimal results if the chosen model is not ideal. Trying out different models and not just different parameters could help improve the experiment's results. Alternatively, using a more exhaustive approach such as Grid sampling could lead to better hyperparameter values. 
+
+## Model Comparison
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
