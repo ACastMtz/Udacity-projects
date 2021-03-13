@@ -131,6 +131,8 @@ Here a couple of screenshots of the best model:
 
 ![Best Model 2](./Images/automl_bestmodel_2.png "AutoML Best Model 2")
 
+Given the exhaustive search carried out by the `automl` run, in order to improve the results it is probably a better idea to try to optimize other steps of the workflow, e.g., getting a larger dataset not only with more data points but also to expand the feature space with a more thorough EDA step.
+
 ## Hyperparameter Tuning
 
 In this experiment, a **Logistic Regression** model is trained using supervised learning for prediction purposes. A logistic regression is an appropiate model to use for conducting prediction for the value of a dichotomous (binary) variable.
@@ -145,7 +147,12 @@ The second hyperparameter, maximum number of iterations, is the number of iterat
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+
+A screenshot of the `RunDetails` widget shows the run finished successfully and provides an overview as well of the first top five child runs:
+
 ![RunDetails Widget Hyper](./Images/hyper_rundets.png "RunDetails widget")
+
+The `Hyperdirve`'s best run yielded an `Accuracy = 0.8367` for the logistic regression model with `Hyperparameters`: `inverse of regularization strength C = 0.5898` and `maximum number of iterations = 200`.
 
 ![Best Model Hyper](./Images/hyper_bestmodel.png "Hyperdrive Best Model")
 
