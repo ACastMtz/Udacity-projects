@@ -112,9 +112,6 @@ We define first the settings and cofiguration needed for the auto machine learni
 
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 With the above configuration the AutoML run took a little over an hour.
 
@@ -124,7 +121,7 @@ Below is a screenshot showing the `RunDetails` widget showing that the automl ru
 
 The run yielded a `VotingEnsemble` as the best model with the highest `Accuracy = 0.8898`.
 
-A voting ensemble is a machine learning model that builds predictions from combining results from other models, it is therefore sometimes refered to as a meta-model. More specifically, Azure AutoML uses the PreFittedVotingClassifier Class, inherited from sklearn ensemble VotingClassifier class, which mixes different classifiers and uses a majority vote or the average predicted probabilities to predict the class labels. It is very helpful to balance out the individual performances of the models.
+A voting ensemble is a machine learning model that builds predictions from combining results from other models, it is therefore sometimes refered to as a meta-model. More specifically, Azure AutoML uses the `PreFittedVotingClassifier` Class, inherited from sklearn ensemble `VotingClassifier` class, which mixes different classifiers and uses a majority vote or the average predicted probabilities to predict the class labels. It is very helpful to balance out the individual performances of the models.
 
 Here a couple of screenshots of the best model:
 
@@ -135,6 +132,15 @@ Here a couple of screenshots of the best model:
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
+s the appropriate regression analysis to conduct when the dependent variable is dichotomous (binary).  Like all regression analyses, the logistic regression is a predictive analysis.  Logistic regression is used to describe data and to explain the relationship between one dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.
+
+In this experiment, a **Logistic Regression** model is trained using supervised learning for prediction purposes. A logistic regression is an appropiate model to use for conducting prediction for the value of a dichotomous (binary) variable.
+
+The `Hyperdrive` run sweeps different hyperparameters combinations to find the values that optimize the model's main metric. Two hyperparameters are used for the sampling: `inverse of regularization strength "C"` and `maximum number of iterations`.
+
+Regularization is used to prevent the model from overfitting when many features are present but not too much data is available. Large parameter values are penalyzed lest the model almost perfectly fits the training data and deters generalization. A larger value of the regularization strength for a given parameter reduces the probability of the parameter's value to increase as an adjusting response for small perturbations in the data. In this case, since it is the inverse of the regularization strength, the values for this parameter need to be small and are sampled from an uniform distribution between 0.01 to 1.
+
+The second hyperparameter, maximum number of iterations, is the number of iterations that are allowed for the model to converge, in this case when the accuracy is at its maximum value, given a set of parameters. This hyperparameter is used to prevent the model to overfit and/or run without converging and it can be equal to one of the following 4 values: `choice(100,200,500,1000)`.
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
