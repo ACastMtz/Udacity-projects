@@ -84,6 +84,8 @@ df = pd.read_csv('./Data/lending_club_loan.csv')
 
 ## Automated ML
 
+Azure's `Auto ML` is a very helpful tool to effectively and automatically, albeit slow, sweep through various different models with different parameters. It has a high probability to find a good model according to a predefined metric because it is not restricted to just one model, at the cost of a longer training time.
+
 ### AutoML Configuration
 
 We define first the settings and cofiguration needed for the auto machine learning run:
