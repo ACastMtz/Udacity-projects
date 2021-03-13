@@ -121,15 +121,13 @@ Below is a screenshot showing the `RunDetails` widget showing that the automl ru
 
 ![RunDetails Widget](./Images/automl_rundets.png "RunDetails widget")
 
-The run yielded a `VotingEnsemble` as the best model with the highest `Accuracy = 0.8898`.
+The run yielded a `VotingEnsemble` as the best model with the highest `Accuracy = 0.8897`.
 
 A voting ensemble is a machine learning model that builds predictions from combining results from other models, it is therefore sometimes refered to as a meta-model. More specifically, Azure AutoML uses the `PreFittedVotingClassifier` Class, inherited from sklearn ensemble `VotingClassifier` class, which mixes different classifiers and uses a majority vote or the average predicted probabilities to predict the class labels. It is very helpful to balance out the individual performances of the models.
 
 Here a couple of screenshots of the best model:
 
 ![Best Model](./Images/automl_bestmodel.png "AutoML Best Model")
-
-![Best Model 2](./Images/automl_bestmodel_2.png "AutoML Best Model 2")
 
 In order to improve the results from the `automl` run we could try allowing deep learning methods in the batch of models to try during the execution of the experiment. Optimizing other steps of the workflow might also influence the end results in a positive way such as getting a larger dataset thorough e.g. resampling techniques or expanding the feature space with a more thorough EDA step of feature engineering.
 
@@ -159,7 +157,12 @@ The `Hyperdrive` trains a single model, this could hinder the experiment from yi
 
 ## Model Comparison
 
-From the two training strategies, the model with the best performance was the `VotingEnsemble` with the highest `Accuracy = 0.8898` from the `automl` run, so this is the model that we'll deploy to the **Azure Container Instance (ACI)**.
+|     |      AutoML    | Hyperdrive       |
+|:--------------------:|:-----------------------------:|:-----------------------------:|
+| Model | `VotingEnsemble` | `Logistic Regression`  |
+| Accuracy | `0.8897` | `0.8367`  |
+
+From the two training strategies, the model with the best performance was the `VotingEnsemble` with the highest `Accuracy = 0.8897` from the `automl` run, so this is the model that we'll deploy to the **Azure Container Instance (ACI)**.
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
