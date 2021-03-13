@@ -116,14 +116,21 @@ We define first the settings and cofiguration needed for the auto machine learni
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
-With the above configuration the AutoML run takes approx. 
-The AutoML classification task was run with similar parameters on the same dataset using Accuracy as the primary metric, as well as adding a couple more parameters such as n_cross_validations (number of cross validations to perform if validation data is not specified), max_cores_per_iteration (maximum number of threads per iteration, -1 uses all available cores), and max_concurrent_iterations (maximum number of iterations executed in parallel). As already mentioned, the VotingEnsemble method yielded the highest accuracy value. A voting ensemble is a machine learning model that builds predictions from combining results from other models, it is therefore sometimes refered to as a meta-model. More specifically, Azure AutoML uses the PreFittedVotingClassifier Class (inherited from sklearn ensemble VotingClassifier class) with the parameters following parameters:
+With the above configuration the AutoML run took a little over an hour.
 
+Below is a screenshot showing the `RunDetails` widget showing that the automl run is done as well as some of the different experiments:
 
+![RunDetails Widget](./Images/automl_rundets.png "RunDetails widget")
 
-![RunDetails Widget](./Images/RunDets_automl.png "RunDetails widget")
+The run yielded a `VotingEnsemble` as the best model with the highest `Accuracy = 0.8898`.
 
-![Best Model](./Images/bestModel_automl.png "AutoML Best Model")
+A voting ensemble is a machine learning model that builds predictions from combining results from other models, it is therefore sometimes refered to as a meta-model. More specifically, Azure AutoML uses the PreFittedVotingClassifier Class, inherited from sklearn ensemble VotingClassifier class, which mixes different classifiers and uses a majority vote or the average predicted probabilities to predict the class labels. It is very helpful to balance out the individual performances of the models.
+
+Here a couple of screenshots of the best model:
+
+![Best Model](./Images/automl_bestmodel.png "AutoML Best Model")
+
+![Best Model 2](./Images/automl_bestmodel_2.png "AutoML Best Model 2")
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
