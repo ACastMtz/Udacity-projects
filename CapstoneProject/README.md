@@ -130,9 +130,6 @@ Here a couple of screenshots of the best model:
 ![Best Model 2](./Images/automl_bestmodel_2.png "AutoML Best Model 2")
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
-
-s the appropriate regression analysis to conduct when the dependent variable is dichotomous (binary).  Like all regression analyses, the logistic regression is a predictive analysis.  Logistic regression is used to describe data and to explain the relationship between one dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.
 
 In this experiment, a **Logistic Regression** model is trained using supervised learning for prediction purposes. A logistic regression is an appropiate model to use for conducting prediction for the value of a dichotomous (binary) variable.
 
@@ -146,6 +143,11 @@ The second hyperparameter, maximum number of iterations, is the number of iterat
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+![RunDetails Widget](./Images/automl_rundets.png "RunDetails widget")
+
+![Best Model](./Images/automl_bestmodel.png "AutoML Best Model")
+
+
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
