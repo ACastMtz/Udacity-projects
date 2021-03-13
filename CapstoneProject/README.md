@@ -143,9 +143,9 @@ The second hyperparameter, maximum number of iterations, is the number of iterat
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-![RunDetails Widget](./Images/automl_rundets.png "RunDetails widget")
+![RunDetails Widget Hyper](./Images/hyper_rundets.png "RunDetails widget")
 
-![Best Model](./Images/automl_bestmodel.png "AutoML Best Model")
+![Best Model Hyper](./Images/hyper_bestmodel.png "Hyperdrive Best Model")
 
 
 
