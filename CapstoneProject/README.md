@@ -159,8 +159,12 @@ The `Hyperdrive` trains a single model, this could hinder the experiment from yi
 
 ## Model Comparison
 
+From the two training strategies, the model with the best performance was the `VotingEnsemble` with the highest `Accuracy = 0.8898` from the `automl` run, so this is the model that we'll deploy to the **Azure Container Instance** (ACI).
+
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+
+To be able to consume the model, it needs to be deployed. The deployment of the model to the ACI creates a REST endpoint and exposes it to allow interactions via a HTTP API service over POST requests.
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
