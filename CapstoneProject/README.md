@@ -228,6 +228,13 @@ Please refer to the **Screen Recording** for a more detailded description.
 
 ## Future Work
 
+A possible outlook for future improvements could be:
+
+- Trying out different models in the `HyperDrive` with different hyperparameters
+- Allowing Deep Learning models in the `AutoML` run
+- Extending training time and using a more powerful hardware configuration, e.g. GPUs or TPUs
+- Creating and publishing pipelines to automize the whole training process
+- ...And, of course, collecting more trainig data
 
 ## Resources
 
