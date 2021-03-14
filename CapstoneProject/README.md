@@ -125,7 +125,7 @@ The run yielded a `VotingEnsemble` as the best model with the highest `Accuracy 
 
 A voting ensemble is a machine learning model that builds predictions from combining results from other models, it is therefore sometimes refered to as a meta-model. More specifically, Azure AutoML uses the `PreFittedVotingClassifier` Class, inherited from sklearn ensemble `VotingClassifier` class, which mixes different classifiers and uses a majority vote or the average predicted probabilities to predict the class labels. It is very helpful to balance out the individual performances of the models.
 
-Here a couple of screenshots of the best model:
+Here is a screenshot of the best model:
 
 ![Best Model](./Images/automl_bestmodel.png "AutoML Best Model")
 
@@ -165,7 +165,6 @@ The `Hyperdrive` trains a single model, this could hinder the experiment from yi
 From the two training strategies, the model with the best performance was the `VotingEnsemble` with the highest `Accuracy = 0.8897` from the `automl` run, so this is the model that we'll deploy to a **Azure Container Instance (ACI)**, this type of instance is used for workloads under 48Gb of memory.
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
 To be able to consume the model, it needs to be deployed. Before the actual deployment, some preprocessing steps need to be carried out.
 
@@ -187,15 +186,15 @@ Finally, the deployment of the model to the **ACI** creates a REST endpoint and 
 
 ![Endpoint](./Images/endpoint.png "Endpoint")
 
-To query the endpoint we use the `endpoint.py` script to feed JSON strings with the required information to be consumed by the deployed model. 
+To query the endpoint we use the `endpoint.py` script to feed JSON strings with the required information to be consumed by the deployed model. The image below shoes the cell of the `automl` notebook where two random data points from the dataset are transformed into JSON strings samples to test the deployed model:
 
 ![JSON String](./Images/JSONpayload.png "JSON Payload")
 
-By sending HTTP POST requests to the server's endpoint and the JSON payload, the model can make predictions and send them back as HTTP POST responses.
+By sending HTTP POST requests to the server's endpoint and the JSON payload, the model can make predictions and send them back as HTTP POST responses. This is carried out by executing the `endpoint.py` script:
 
 ![POST Response](./Images/POSTresponse.png "POST repsonse")
 
-For a clearer explanation of the whole execution please refer to the **Screen Recording**.
+For a clearer explanation of the whole execution please refer to the **Screen Recording** of the project.
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
