@@ -203,4 +203,23 @@ For a clearer explanation of the whole execution please refer to the **Screen Re
 - Demo of a sample request sent to the endpoint and its response
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
+Additionally, some extra services provided by the ML Studio were leveraged for a more integral understanding of the project:
+ - `service.weblogs`: Which enables logging for the deployed webservice. It provides information on the web app such as listening port, scoring timer, time of request's arrival, etc.
+
+![Logging](./Images/logging.png "Logging")
+
+ - **Model's explanation preview** : Allows to visually explore the data and the feature importance, i.e., how much of an influence each feature has on the outcome form the model's training. 
+
+![Explanations](./Images/explanations.png "Explanations")
+
+ - **Application Insights**: It's an alternative way for debugging and troubleshooting the web app by retrieving logs from the deployed model.
+
+![Application Insights](./Images/appinsight.png "Application Insights")
+
+## Data Citation
+
+## Resources
+
+
+ - 
