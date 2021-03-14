@@ -157,10 +157,10 @@ The `Hyperdrive` trains a single model, this could hinder the experiment from yi
 
 ## Model Comparison
 
-|     |      AutoML    | Hyperdrive       |
+|     |      Model    | Accuracy       |
 |:--------------------:|:-----------------------------:|:-----------------------------:|
-| Model | `VotingEnsemble` | `Logistic Regression`  |
-| Accuracy | `0.8897` | `0.8367`  |
+| AutoML| `VotingEnsemble` | `0.8897`  |
+| Hyperdrive | `Logistic Regression` | `0.8367`  |
 
 From the two training strategies, the model with the best performance was the `VotingEnsemble` with the highest `Accuracy = 0.8897` from the `automl` run, so this is the model that we'll deploy to a **Azure Container Instance (ACI)**, this type of instance is used for workloads under 48Gb of memory.
 
@@ -215,7 +215,7 @@ Additionally, some extra services provided by the ML Studio were leveraged for a
 
  - **Application Insights**: It's an alternative way for debugging and troubleshooting the web app by retrieving logs from the deployed model.
 
-![Application Insights](./Images/appinsight.png "Application Insights")
+![Application Insights](./Images/appinsights.png "Application Insights")
 
 ## Data Citation
 
