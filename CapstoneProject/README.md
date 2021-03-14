@@ -249,3 +249,4 @@ A possible outlook for future improvements could be:
 - https://docs.microsoft.com/en-us/python/api/azureml-train-automl-client/azureml.train.automl.automlconfig.automlconfig?view=azure-ml-py
 - https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/machine-learning/how-to-deploy-azure-container-instance.md
 - https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier- 
+- https://www.kaggle.com/faressayah/lending-club-loan-defaulters-prediction
