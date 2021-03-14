@@ -147,7 +147,7 @@ A screenshot of the `RunDetails` widget shows the run finished successfully and 
 
 ![RunDetails Widget Hyper](./Images/hyper_rundets.png "RunDetails widget")
 
-The `Hyperdirve`'s best run yielded an `Accuracy = 0.8367` for the logistic regression model with `Hyperparameters`: `inverse of regularization strength C = 0.5898` and `maximum number of iterations = 200`.
+The `Hyperdirve`'s best run yielded an `Accuracy = 0.8367` for the logistic regression model with `Hyperparameters`: `inverse of regularization strength C = 0.5930` and `maximum number of iterations = 200`.
 
 ![Best Model Hyper](./Images/hyper_bestmodel.png "Hyperdrive Best Model")
 
@@ -162,26 +162,30 @@ The `Hyperdrive` trains a single model, this could hinder the experiment from yi
 | Model | `VotingEnsemble` | `Logistic Regression`  |
 | Accuracy | `0.8897` | `0.8367`  |
 
-From the two training strategies, the model with the best performance was the `VotingEnsemble` with the highest `Accuracy = 0.8897` from the `automl` run, so this is the model that we'll deploy to the **Azure Container Instance (ACI)**.
+From the two training strategies, the model with the best performance was the `VotingEnsemble` with the highest `Accuracy = 0.8897` from the `automl` run, so this is the model that we'll deploy to a **Azure Container Instance (ACI)**, this type of instance is used for workloads under 48Gb of memory.
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
+To be able to consume the model, it needs to be deployed. Before the actual deployment, some preprocessing steps need to be carried out.
+
 We first save the model that we have selected and then register it.
 
-$$$$ IMAGE WITH REGISTERED MODEL  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+![Registered Model](./Images/registered.png "Registered Model")
 
 After registration, we need to define a custom environment to be used for depolyment. This is done using the `InferenceConfig` Class.
 
 The two main parameters for the `InferenceConfig` object are:
 
- - `entry_script` : contains the script for model scoring
- - `environment` : contains the Python dependencies and variables used in the machine learning experiment, including data preparation, training, and deployment
-
+ - `entry_script` : contains the script for model scoring, i.e., processes the input data and returns the scored output.
+ - `environment` : contains the Python dependencies and variables used in the machine learning experiment, including data preparation, training, and deployment.
 Both parameters can be retrieved from the `outputs` folder from the saved model, the `scoring.py` and `env.yml` files respectively. 
 
-To be able to consume the model, it needs to be deployed. The deployment of the model to the **ACI** creates a REST endpoint and exposes it to allow interactions via a HTTP API service over POST requests.
+Afterwards we define the configuration for the deployment using the `deploy_configuration` method from the `AciWebservice` Class. Here we define parameters such as the hardware setup of the webservice `cpu_cores` and `memory_gb`; and other parameters like `auth_enabled` for authorization purposes and `enable_app_insights` for logging.
 
+Finally, the deployment of the model to the **ACI** creates a REST endpoint and exposes it to allow interactions via a HTTP API service over POST requests.
+
+![Endpoint](./Images/endpoint.png "Endpoint")
 
 
 ## Screen Recording
