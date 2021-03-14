@@ -250,3 +250,4 @@ A possible outlook for future improvements could be:
 - https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/machine-learning/how-to-deploy-azure-container-instance.md
 - https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier- 
 - https://www.kaggle.com/faressayah/lending-club-loan-defaulters-prediction
+- https://knowledge.udacity.com/questions/463620
