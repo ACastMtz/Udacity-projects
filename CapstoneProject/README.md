@@ -187,6 +187,15 @@ Finally, the deployment of the model to the **ACI** creates a REST endpoint and 
 
 ![Endpoint](./Images/endpoint.png "Endpoint")
 
+To query the endpoint we use the `endpoint.py` script to feed JSON strings with the required information to be consumed by the deployed model. 
+
+![JSON String](./Images/JSONpayload.png "JSON Payload")
+
+By sending HTTP POST requests to the server's endpoint and the JSON payload, the model can make predictions and send them back as HTTP POST responses.
+
+![POST Response](./Images/POSTresponse.png "POST repsonse")
+
+For a clearer explanation of the whole execution please refer to the **Screen Recording**.
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
