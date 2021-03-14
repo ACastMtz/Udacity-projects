@@ -217,6 +217,8 @@ Additionally, some extra services provided by the ML Studio were leveraged for a
 
 ![Application Insights](./Images/appinsights.png "Application Insights")
 
+Please refer to the **Screen Recording** for a more detailded description.
+
 ## Resources
 
 
