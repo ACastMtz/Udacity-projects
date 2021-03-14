@@ -207,7 +207,7 @@ A screencast was recorded demonstrating the following points:
   - Model's explanations preview
   - Applications insights
  
-The video can be found following this link.
+The video can be found following this [link](https://youtu.be/2ltSnmhU_gg).
 
 ## Standout Suggestions
 
