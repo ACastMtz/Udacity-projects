@@ -197,10 +197,17 @@ By sending HTTP POST requests to the server's endpoint and the JSON payload, the
 For a clearer explanation of the whole execution please refer to the **Screen Recording** of the project.
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+
+A screencast was recorded demonstrating the following points:
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
+- Standout Suggestions:
+  - Webservice logging
+  - Model's explanations preview
+  - Applications insights
+ 
+The video can be found following this link.
 
 ## Standout Suggestions
 
@@ -219,7 +226,8 @@ Additionally, some extra services provided by the ML Studio were leveraged for a
 
 Please refer to the **Screen Recording** for a more detailded description.
 
+## Future Work
+
+
 ## Resources
 
-
- - 
