@@ -231,3 +231,14 @@ Please refer to the **Screen Recording** for a more detailded description.
 
 ## Resources
 
+- https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.core.model.inferenceconfig?view=azure-ml-py
+- https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.core.environment.environment?view=azure-ml-py
+- https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/README.md
+- https://stats.idre.ucla.edu/stata/output/logistic-regression-analysis/
+- https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-app-insights
+- https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.core.run.run?view=azure-ml-py
+- https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-and-where?tabs=pythohttps://docs.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability-amln
+- https://docs.microsoft.com/en-us/azure/machine-learning/how-to-consume-web-service?tabs=python
+- https://docs.microsoft.com/en-us/python/api/azureml-train-automl-client/azureml.train.automl.automlconfig.automlconfig?view=azure-ml-py
+- https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/machine-learning/how-to-deploy-azure-container-instance.md
+- https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier- 
