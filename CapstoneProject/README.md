@@ -129,7 +129,7 @@ Here is a screenshot of the best model:
 
 ![Best Model](./Images/automl_bestmodel.png "AutoML Best Model")
 
-In order to improve the results from the `automl` run we could try allowing deep learning methods in the batch of models to try during the execution of the experiment. Optimizing other steps of the workflow might also influence the end results in a positive way such as getting a larger dataset thorough e.g. resampling techniques or expanding the feature space with a more thorough EDA step of feature engineering.
+In order to improve the results from the `automl` run we could try allowing deep learning methods in the batch of models to try during the execution of the experiment. Optimizing other steps of the workflow might also influence the end results in a positive way such as getting a larger dataset through e.g. resampling techniques or expanding the feature space with a more thorough EDA step or feature engineering.
 
 ## Hyperparameter Tuning
 
